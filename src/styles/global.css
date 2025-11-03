@@ -38,6 +38,7 @@ main {
   padding: 3rem 1.5rem 4rem;
 }
 
+/* ---------- NAVBAR ---------- */
 
 .nav {
   border-bottom: 1px solid rgba(148, 163, 184, 0.35);
@@ -52,6 +53,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .nav-logo {
@@ -62,6 +64,7 @@ main {
   color: #22d3ee;
 }
 
+/* Enlaces desktop */
 .nav-links {
   display: flex;
   gap: 1rem;
@@ -71,9 +74,82 @@ main {
 .nav-links a {
   color: #cbd5f5;
 }
+
 .nav-links a:hover {
   color: #22d3ee;
 }
+
+/* Checkbox oculto */
+.nav-toggle {
+  display: none;
+}
+
+/* Botón hamburguesa (solo móvil) */
+.nav-toggle-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.22rem;
+  width: 1.9rem;
+  height: 1.9rem;
+  padding: 0.2rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  cursor: pointer;
+}
+
+.nav-toggle-btn span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #e5e7eb;
+  border-radius: 999px;
+}
+
+/* ---------- RESPONSIVE NAV ---------- */
+
+@media (max-width: 720px) {
+  .nav-inner {
+    padding-inline: 1.1rem;
+  }
+
+  /* Ocultamos los enlaces en línea y mostramos la hamburguesa */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0.75rem;
+    left: 0.75rem;
+    margin-top: 0.6rem;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 0.8rem 0.75rem;
+    background: rgba(15, 23, 42, 0.98);
+    border-radius: 0.9rem;
+    border: 1px solid rgba(148, 163, 184, 0.45);
+    z-index: 20;
+  }
+
+  .nav-links a {
+    padding: 0.4rem 0.35rem;
+    border-radius: 0.5rem;
+  }
+
+  .nav-links a:hover {
+    background: rgba(30, 64, 175, 0.4);
+    color: #e5e7eb;
+  }
+
+  .nav-toggle-btn {
+    display: flex;
+  }
+
+  /* Cuando el checkbox está marcado, mostramos el menú */
+  .nav-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+}
+
 
 
 /* Títulos y texto */
