@@ -1,0 +1,99 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Proyectos">
+  <!-- CABECERA -->
+  <section class="projects-header">
+    <p class="projects-kicker">Proyectos</p>
+    <h1 class="projects-title">Lo que voy construyendo</h1>
+    <p class="projects-subtitle">
+      Aquí recopilo los proyectos personales que he ido creando para aprender, experimentar y
+      aplicar lo que sé de QA, automatización e inteligencia artificial.
+    </p>
+  </section>
+
+  <!-- LISTADO / GRID -->
+  <section class="section projects-grid">
+    <!-- PROYECTO: Chatbot local -->
+    <article class="project-card">
+      <header class="project-header">
+        <h2>Chatbot local para Tomelloso</h2>
+        <p class="project-tag">Asistente conversacional · Proyecto personal</p>
+      </header>
+
+      <p class="project-summary">
+        Chatbot informativo para la ciudad de Tomelloso, accesible desde la web
+        <a href="https://iatomelloso.es" target="_blank" rel="noreferrer">iatomelloso.es</a>.  
+        El objetivo es centralizar información útil para vecinos y visitantes y, al mismo tiempo,
+        experimentar con automatización e IA aplicada a un entorno local.
+      </p>
+
+      <dl class="project-meta">
+        <div>
+          <dt>Rol</dt>
+          <dd>Diseño, desarrollo, contenidos y despliegue</dd>
+        </div>
+        <div>
+          <dt>Tecnologías</dt>
+          <dd>Plataforma de chatbot, integraciones web, fuentes de datos locales</dd>
+        </div>
+        <div>
+          <dt>Estado</dt>
+          <dd>En producción y en mejora continua</dd>
+        </div>
+      </dl>
+
+      <section class="project-body">
+        <h3>¿Qué hace el chatbot?</h3>
+        <p>
+          El asistente está pensado para responder preguntas frecuentes sobre Tomelloso: servicios,
+          información básica, recursos de interés y respuestas rápidas que normalmente obligarían a
+          buscar en varias webs o llamar por teléfono.
+        </p>
+
+        <h3>Objetivo del proyecto</h3>
+        <p>
+          Más allá de la parte útil para la gente de Tomelloso, este proyecto me sirve como
+          laboratorio práctico para:
+        </p>
+        <ul>
+          <li>Probar flujos conversacionales y experiencia de usuario con chatbots.</li>
+          <li>Trabajar con datos estructurados y no estructurados de ámbito local.</li>
+          <li>Medir rendimiento, tiempos de respuesta y estabilidad del servicio.</li>
+          <li>
+            Iterar sobre el diseño y las funcionalidades en función del feedback y el uso real.
+          </li>
+        </ul>
+
+        <h3>Lo que he aprendido</h3>
+        <p>
+          Este proyecto me ha ayudado a entender mejor cómo aterrizar la IA en casos reales, qué
+          tipo de preguntas hace la gente y cómo afecta el rendimiento y la calidad de las
+          respuestas a la percepción del usuario.
+        </p>
+      </section>
+
+      <div class="project-actions">
+        <a
+          href="https://iatomelloso.es"
+          target="_blank"
+          rel="noreferrer"
+          class="btn btn-primary"
+        >
+          🌐 Visitar iatomelloso.es
+        </a>
+        <a href="/blog" class="btn btn-ghost">Ver artículos relacionados</a>
+      </div>
+    </article>
+
+    <!-- PROYECTOS FUTUROS (placeholder) -->
+    <article class="project-card project-card--placeholder">
+      <h2>Más proyectos en camino…</h2>
+      <p>
+        Esta sección crecerá con nuevos experimentos: automatización, herramientas internas,
+        mini-apps y cualquier cosa que me sirva para seguir aprendiendo y aportar valor.
+      </p>
+    </article>
+  </section>
+</Layout>

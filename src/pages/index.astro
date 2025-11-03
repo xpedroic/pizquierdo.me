@@ -1,0 +1,86 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Inicio">
+  <!-- HERO -->
+  <section class="hero">
+    <p class="hero-kicker">QA de rendimiento & proyectos digitales</p>
+    <h1>Hola, soy Pedro Izquierdo 👋</h1>
+    <p class="hero-lead">
+      QA de rendimiento y creador de proyectos digitales. Me apasiona la automatización,
+      la inteligencia artificial y experimentar con nuevas ideas tecnológicas.
+    </p>
+
+    <div class="hero-actions">
+      <a href="/proyectos" class="btn btn-primary">🚀 Ver proyectos</a>
+      <a href="/contacto" class="btn btn-ghost">📬 Contacto</a>
+    </div>
+
+    <span class="hero-scroll">Desliza ↓</span>
+  </section>
+
+    <!-- STACK / HABILIDADES PRINCIPALES -->
+  <section class="section section-stack">
+    <ul class="stack-list">
+      <li>QA de rendimiento</li>
+      <li>JMeter</li>
+      <li>LoadRunner</li>
+      <li>Azure</li>
+      <li>Automatización</li>
+      <li>IA aplicada</li>
+    </ul>
+  </section>
+
+
+  <!-- SOBRE MÍ -->
+  <section class="section section-card">
+    <h2>🧠 Sobre mí</h2>
+    <p>
+      Soy un profesional del testing de rendimiento con experiencia en herramientas como JMeter,
+      LoadRunner y Azure. Además, he desarrollado proyectos personales de automatización e
+      inteligencia artificial, y utilizo esta web como mi laboratorio para aprender y experimentar.
+    </p>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section class="section">
+    <h2>💼 Últimos proyectos</h2>
+
+    <div class="cards">
+      <article class="card">
+        <h3>Chatbot Local</h3>
+        <p>
+          Asistente conversacional para ciudadanos de Tomelloso, creado con Botpress y datos
+          locales.
+        </p>
+        <a href="/proyectos" class="card-link">Ver más →</a>
+      </article>
+
+      <article class="card">
+        <h3>Pruebas de Rendimiento</h3>
+        <p>
+          Escenarios de carga con JMeter y LoadRunner, análisis de tiempos de respuesta y
+          optimización de rendimiento.
+        </p>
+        <a href="/proyectos" class="card-link">Ver más →</a>
+      </article>
+
+      <article class="card">
+        <h3>Web Personal IA</h3>
+        <p>
+          Esta misma web, construida con Astro y pensada para integrarse con APIs de IA y pruebas
+          automatizadas.
+        </p>
+        <a href="/proyectos" class="card-link">Ver más →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section section-cta">
+    <h2>¿Te gustaría colaborar o charlar?</h2>
+    <p>Estoy abierto a proyectos, ideas o conversaciones sobre tecnología, rendimiento o IA.</p>
+    <a href="/contacto" class="btn btn-light">Escríbeme 🚀</a>
+  </section>
+</Layout>

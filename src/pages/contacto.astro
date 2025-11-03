@@ -1,0 +1,111 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Contacto">
+  <section class="contact-header">
+    <p class="contact-kicker">Contacto</p>
+    <h1 class="contact-title">Hablemos</h1>
+    <p class="contact-subtitle">
+      Si quieres comentarme una idea, hablar sobre rendimiento, QA, IA aplicada o simplemente
+      saludar, aquí tienes un sitio para hacerlo. Responderé lo antes posible.
+    </p>
+  </section>
+
+  <section class="section contact-grid">
+    <!-- Columna info -->
+    <div class="contact-info">
+      <h2>Cómo puedes encontrarme</h2>
+      <p>
+        Prefiero que el contacto sea claro y sencillo. Puedes usar el formulario de la derecha o
+        escribirme directamente por email o LinkedIn.
+      </p>
+
+      <ul class="contact-list">
+        <li>
+          <span class="label">Email</span>
+          <a href="mailto:pedro****@gmail.com">pedro****@gmail.com</a>
+        </li>
+        <li>
+          <span class="label">Teléfono</span>
+          <span>****</span>
+        </li>
+        <li>
+          <span class="label">LinkedIn</span>
+          <a href="https://www.linkedin.com/in/pedroizq" target="_blank" rel="noreferrer">
+            linkedin.com/in/pedroizq
+          </a>
+        </li>
+      </ul>
+
+      <div class="contact-quick">
+        <a href="mailto:pedro****@gmail.com?subject=Contacto%20desde%20Pizquierdo.me"
+           class="btn btn-primary">
+          ✉️ Escribirme un email
+        </a>
+        <a href="https://www.linkedin.com/in/pedroizq" target="_blank" rel="noreferrer"
+           class="btn btn-ghost">
+          💼 Ver mi LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <!-- Columna formulario -->
+    <div class="contact-form-card">
+      <h2>Formulario de contacto</h2>
+      <p class="contact-form-help">
+        Completa estos datos y se abrirá tu cliente de correo con el mensaje preparado.
+        Más adelante podremos conectarlo a un servicio como Formspree para enviar directamente desde la web.
+      </p>
+
+      <form
+        class="contact-form"
+        action="mailto:pedro****@gmail.com"
+        method="POST"
+        enctype="text/plain"
+      >
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="Nombre" type="text" placeholder="Tu nombre" required />
+        </div>
+
+        <div class="field">
+          <label for="email">Correo electrónico</label>
+          <input
+            id="email"
+            name="Email"
+            type="email"
+            placeholder="tucorreo@ejemplo.com"
+            required
+          />
+        </div>
+
+        <div class="field">
+          <label for="asunto">Asunto</label>
+          <input
+            id="asunto"
+            name="Asunto"
+            type="text"
+            placeholder="Sobre qué te gustaría hablar"
+            required
+          />
+        </div>
+
+        <div class="field">
+          <label for="mensaje">Mensaje</label>
+          <textarea
+            id="mensaje"
+            name="Mensaje"
+            rows="5"
+            placeholder="Cuéntame un poco más..."
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary contact-submit">
+          📨 Enviar mensaje
+        </button>
+      </form>
+    </div>
+  </section>
+</Layout>

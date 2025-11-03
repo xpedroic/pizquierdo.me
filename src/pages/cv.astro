@@ -1,0 +1,197 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Mi CV">
+  <!-- CABECERA CV -->
+  <section class="cv-header">
+    <div>
+      <p class="cv-kicker">Currículum</p>
+      <h1 class="cv-title">Pedro Izquierdo Castellanos</h1>
+      <p class="cv-subtitle">Performance QA Engineer & Administración de Sistemas</p>
+    </div>
+
+    <div class="cv-header-actions">
+      <a href="/contacto" class="btn btn-primary">📬 Contacto</a>
+      <!-- Cuando tengas un PDF subido a la web, cambia el href -->
+      <a href="#" class="btn btn-ghost">⬇ Descargar CV (próximamente)</a>
+    </div>
+  </section>
+
+  <!-- GRID PRINCIPAL -->
+  <section class="section cv-grid">
+    <!-- COLUMNA PRINCIPAL -->
+    <div class="cv-main">
+      <!-- PERFIL -->
+      <div class="cv-block">
+        <h2>Perfil profesional</h2>
+        <p>
+          Soy QA Tester con más de cuatro años de experiencia en administración de sistemas y
+          aseguramiento de la calidad, especializado en pruebas de rendimiento y automatizadas.
+          Actualmente busco seguir desarrollándome como <strong>Performance QA Engineer</strong>,
+          aportando tanto visión técnica como capacidad de análisis y mejora continua.
+        </p>
+      </div>
+
+      <!-- EXPERIENCIA -->
+      <div class="cv-block">
+        <h2>Experiencia laboral</h2>
+
+        <article class="cv-exp-item">
+          <div class="cv-exp-header">
+            <h3>Performance QA Engineer</h3>
+            <span class="cv-exp-period">2024 – Actualidad</span>
+          </div>
+          <p class="cv-exp-company">Inetum</p>
+          <ul>
+            <li>Creación y ejecución de casos de prueba de rendimiento utilizando <strong>JMeter</strong>.</li>
+            <li>Gestión de casos de prueba y seguimiento de bugs con <strong>Azure DevOps</strong>.</li>
+            <li>Monitorización de peticiones <strong>API</strong> mediante herramientas de desarrollador de Google.</li>
+            <li>Ejecución de diferentes tipos de pruebas de rendimiento para garantizar la estabilidad del sistema.</li>
+            <li>Análisis de resultados y elaboración de informes con recomendaciones de optimización.</li>
+            <li>Colaboración con equipos multifuncionales para mejorar la eficiencia y el rendimiento de las aplicaciones.</li>
+          </ul>
+        </article>
+
+        <article class="cv-exp-item">
+          <div class="cv-exp-header">
+            <h3>Performance QA Tester</h3>
+            <span class="cv-exp-period">2022 – 2024</span>
+          </div>
+          <p class="cv-exp-company">MTP Métodos y Tecnología</p>
+          <ul>
+            <li>Diseño e implementación de estrategias de pruebas de rendimiento.</li>
+            <li>Desarrollo y ejecución de scripts de automatización con <strong>NeoLoad</strong> y <strong>LoadRunner</strong>.</li>
+            <li>Monitorización de sistemas durante las pruebas para detectar cuellos de botella.</li>
+            <li>Creación de <strong>TestCases en Tricentis Tosca</strong>, mejorando la eficiencia del proceso de pruebas.</li>
+            <li>Colaboración con equipos de desarrollo, sistemas y negocio para comunicar hallazgos técnicos.</li>
+            <li>Elaboración de informes técnicos detallados para la toma de decisiones.</li>
+          </ul>
+        </article>
+
+        <article class="cv-exp-item">
+          <div class="cv-exp-header">
+            <h3>Administrador de Sistemas</h3>
+            <span class="cv-exp-period">2020 – 2022</span>
+          </div>
+          <p class="cv-exp-company">Infofive S.L.</p>
+          <ul>
+            <li>Gestión de incidencias y peticiones de usuarios de forma eficaz.</li>
+            <li>Monitorización y mantenimiento proactivo de sistemas informáticos.</li>
+            <li>Mantenimiento preventivo y correctivo de hardware y software.</li>
+            <li>Conocimientos avanzados en <strong>ciberseguridad</strong> y protección de datos.</li>
+            <li>Administración y configuración de servidores Windows y soluciones Microsoft.</li>
+            <li>Elaboración de informes técnicos precisos para seguimiento y auditoría.</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- PROYECTOS PERSONALES -->
+      <div class="cv-block">
+        <h2>Proyectos personales destacados</h2>
+
+        <article class="cv-proj-item">
+          <h3>Chatbot Local para Tomelloso</h3>
+          <p>
+            Asistente conversacional con información local, construido con Botpress e integrado con
+            datos públicos. Orientado a resolver dudas frecuentes de la ciudadanía y experimentar
+            con automatización e IA aplicada.
+          </p>
+        </article>
+
+        <article class="cv-proj-item">
+          <h3>Webs de nicho & SEO</h3>
+          <p>
+            Desarrollo de varias webs de contenido para
+            aprender posicionamiento SEO, copywriting y monetización con programas de afiliados.
+          </p>
+        </article>
+
+        <article class="cv-proj-item">
+          <h3>Portfolio personal Pizquierdo.me</h3>
+          <p>
+            Esta web, creada como laboratorio para experimentar con rendimiento, diseño,
+            automatización y futura integración de APIs de inteligencia artificial.
+          </p>
+        </article>
+      </div>
+    </div>
+
+    <!-- COLUMNA LATERAL -->
+    <aside class="cv-side">
+      <!-- DATOS -->
+      <div class="cv-block">
+        <h2>Datos de contacto</h2>
+        <ul class="cv-list">
+          <li><strong>Teléfono:</strong>****</li>
+          <li><strong>Email:</strong> pedro****@gmail.com</li>
+          <li><strong>Ubicación:</strong> Ciudad Real, España</li>
+          <li>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/pedroizq" target="_blank" rel="noreferrer">
+              linkedin.com/in/pedroizq
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- HABILIDADES TÉCNICAS -->
+      <div class="cv-block">
+        <h2>Habilidades técnicas</h2>
+        <ul class="cv-tags">
+          <li>JMeter</li>
+          <li>NeoLoad</li>
+          <li>LoadRunner</li>
+          <li>Tricentis Tosca</li>
+          <li>Azure DevOps</li>
+          <li>Postman</li>
+          <li>Pruebas de carga</li>
+          <li>Pruebas automatizadas</li>
+          <li>Administración de sistemas</li>
+        </ul>
+      </div>
+
+      <!-- FORMACIÓN -->
+      <div class="cv-block">
+        <h2>Educación</h2>
+        <ul class="cv-list">
+          <li>
+            <strong>CFGS Desarrollo de Aplicaciones Multiplataforma</strong><br />
+            IES Juan Bosco · 2020 – 2022
+          </li>
+          <li>
+            <strong>CFGM Sistemas Microinformáticos y Redes</strong><br />
+            IES Juan Bosco · 2017 – 2019
+          </li>
+        </ul>
+      </div>
+
+      <!-- CURSOS Y CERTIFICACIONES -->
+      <div class="cv-block">
+        <h2>Cursos y certificaciones</h2>
+        <ul class="cv-list">
+          <li><strong>ISTQB® Foundation Level</strong></li>
+          <li><strong>Scrum Master</strong></li>
+          <li><strong>AS2 for Tricentis Tosca</strong></li>
+        </ul>
+      </div>
+
+      <!-- IDIOMAS -->
+      <div class="cv-block">
+        <h2>Idiomas</h2>
+        <ul class="cv-list">
+          <li><strong>Inglés:</strong> nivel B2</li>
+        </ul>
+      </div>
+
+      <!-- INTERESES -->
+      <div class="cv-block">
+        <h2>Intereses</h2>
+        <p>
+          Tecnología, inteligencia artificial, proyectos personales, mejora financiera,
+          productividad y aprendizaje continuo.
+        </p>
+      </div>
+    </aside>
+  </section>
+</Layout>

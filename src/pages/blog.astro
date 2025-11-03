@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const posts = [
+  {
+    title: "Mi camino hacia el Performance QA",
+    slug: "mi-camino-hacia-el-performance-qa",
+    date: "02 nov 2025",
+    readingTime: "5 min",
+    summary:
+      "Cómo pasé de administración de sistemas a especializarme en pruebas de rendimiento y qué he aprendido por el camino.",
+    tags: ["Carrera", "QA", "Rendimiento"],
+  },
+];
+---
+
+<Layout title="Blog">
+  <section class="blog-header">
+    <p class="blog-kicker">Blog</p>
+    <h1 class="blog-title">Artículos & notas</h1>
+    <p class="blog-subtitle">
+      Aquí voy recopilando aprendizajes sobre QA de rendimiento, automatización, IA y mejoras
+      personales relacionadas con el trabajo y los proyectos.
+    </p>
+  </section>
+
+  <section class="section">
+    <div class="blog-list">
+      {posts.map((post) => (
+        <article class="blog-card">
+          <a href={`/blog/${post.slug}`} class="blog-card-inner">
+            <header>
+              <h2>{post.title}</h2>
+              <p class="blog-meta">
+                <span>{post.date}</span> · <span>{post.readingTime} de lectura</span>
+              </p>
+            </header>
+
+            <p class="blog-summary">{post.summary}</p>
+
+            <ul class="blog-tags">
+              {post.tags.map((tag) => (
+                <li>{tag}</li>
+              ))}
+            </ul>
+
+            <span class="blog-readmore">Leer artículo →</span>
+          </a>
+        </article>
+      ))}
+    </div>
+  </section>
+</Layout>
