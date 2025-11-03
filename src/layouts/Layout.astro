@@ -8,9 +8,19 @@ const { title } = Astro.props;
 
 <html lang="es">
   <head>
+    <link rel="icon" type="image/ico" href="/favicon.ico" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{title ? `${title} | Pizquierdo.me` : "Pizquierdo.me"}</title>
+    <title>{title ? `${title} | Pedro Izquierdo` : "Pedro Izquierdo — QA de rendimiento y proyectos digitales"}</title>
+    <meta
+      name="description"
+      content={description || "Portfolio de Pedro Izquierdo, QA de rendimiento especializado en JMeter, LoadRunner, Azure y automatización de pruebas. Descubre mis proyectos y experiencia profesional."}
+    />
+    
+    <!-- SEO general -->
+    <meta name="author" content="Pedro Izquierdo" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0f172a" />
 
     <!-- Fuente Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
