@@ -3,7 +3,14 @@ import "../styles/global.css";
 import NavBar from "../components/NavBar.astro";
 import Footer from "../components/Footer.astro";
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
+
+const pageTitle =
+  title ? `${title} | Pedro Izquierdo` : "Pedro Izquierdo — QA de rendimiento y proyectos digitales";
+
+const pageDescription =
+  description ||
+  "Portfolio de Pedro Izquierdo, QA de rendimiento especializado en JMeter, LoadRunner, Azure DevOps y automatización de pruebas. Descubre mi experiencia, proyectos y blog.";
 ---
 
 <html lang="es">
