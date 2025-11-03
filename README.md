@@ -15,4 +15,4 @@ Incluye:
 - Deploy automático en Netlify
 
 ## 🚀 Despliegue
-[https://pizquierdo-me.netlify.app](https://pizquierdo-me.netlify.app)
+[https://pizquierdo.netlify.app](https://pizquierdo.netlify.app)
