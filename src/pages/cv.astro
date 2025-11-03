@@ -1,20 +1,21 @@
 ---
 import Layout from "../layouts/Layout.astro";
 
-const title = "CV";
-const description = "QA de rendimiento y proyectos digitales — Pedro Izquierdo. Experiencia con JMeter, LoadRunner, Azure DevOps y automatización.";
+const title = "Mi CV";
+const description =
+  "QA de rendimiento y proyectos digitales — Pedro Izquierdo. Experiencia con JMeter, LoadRunner, Azure DevOps y automatización.";
 ---
 
-<Layout title="Mi CV">
+<Layout {title} {description}>
   <!-- CABECERA CV -->
-  <section class="cv-header">
+  <section class="cv-header" data-reveal data-reveal-variant="scale">
     <div>
       <p class="cv-kicker">Currículum</p>
       <h1 class="cv-title">Pedro Izquierdo Castellanos</h1>
       <p class="cv-subtitle">Performance QA Engineer & Administración de Sistemas</p>
     </div>
 
-    <div class="cv-header-actions">
+    <div class="cv-header-actions" data-reveal data-reveal-delay="1">
       <a href="/contacto" class="btn btn-primary">📬 Contacto</a>
       <!-- Cuando tengas un PDF subido a la web, cambia el href -->
       <a href="#" class="btn btn-ghost">⬇ Descargar CV (próximamente)</a>
@@ -26,7 +27,7 @@ const description = "QA de rendimiento y proyectos digitales — Pedro Izquierdo
     <!-- COLUMNA PRINCIPAL -->
     <div class="cv-main">
       <!-- PERFIL -->
-      <div class="cv-block">
+      <div class="cv-block" data-reveal>
         <h2>Perfil profesional</h2>
         <p>
           Soy QA Tester con más de cuatro años de experiencia en administración de sistemas y
@@ -37,7 +38,7 @@ const description = "QA de rendimiento y proyectos digitales — Pedro Izquierdo
       </div>
 
       <!-- EXPERIENCIA -->
-      <div class="cv-block">
+      <div class="cv-block" data-reveal data-reveal-delay="1">
         <h2>Experiencia laboral</h2>
 
         <article class="cv-exp-item">
@@ -90,7 +91,7 @@ const description = "QA de rendimiento y proyectos digitales — Pedro Izquierdo
       </div>
 
       <!-- PROYECTOS PERSONALES -->
-      <div class="cv-block">
+      <div class="cv-block" data-reveal data-reveal-delay="2">
         <h2>Proyectos personales destacados</h2>
 
         <article class="cv-proj-item">
@@ -123,10 +124,10 @@ const description = "QA de rendimiento y proyectos digitales — Pedro Izquierdo
     <!-- COLUMNA LATERAL -->
     <aside class="cv-side">
       <!-- DATOS -->
-      <div class="cv-block">
+      <div class="cv-block" data-reveal data-reveal-variant="right">
         <h2>Datos de contacto</h2>
         <ul class="cv-list">
-          <li><strong>Teléfono:</strong>****</li>
+          <li><strong>Teléfono:</strong> ****</li>
           <li><strong>Email:</strong> pedro****@gmail.com</li>
           <li><strong>Ubicación:</strong> Ciudad Real, España</li>
           <li>
@@ -139,7 +140,7 @@ const description = "QA de rendimiento y proyectos digitales — Pedro Izquierdo
       </div>
 
       <!-- HABILIDADES TÉCNICAS -->
-      <div class="cv-block">
+      <div class="cv-block" data-reveal data-reveal-variant="right" data-reveal-delay="1">
         <h2>Habilidades técnicas</h2>
         <ul class="cv-tags">
           <li>JMeter</li>
@@ -155,7 +156,7 @@ const description = "QA de rendimiento y proyectos digitales — Pedro Izquierdo
       </div>
 
       <!-- FORMACIÓN -->
-      <div class="cv-block">
+      <div class="cv-block" data-reveal data-reveal-variant="right" data-reveal-delay="2">
         <h2>Educación</h2>
         <ul class="cv-list">
           <li>
@@ -170,7 +171,7 @@ const description = "QA de rendimiento y proyectos digitales — Pedro Izquierdo
       </div>
 
       <!-- CURSOS Y CERTIFICACIONES -->
-      <div class="cv-block">
+      <div class="cv-block" data-reveal data-reveal-variant="right" data-reveal-delay="3">
         <h2>Cursos y certificaciones</h2>
         <ul class="cv-list">
           <li><strong>ISTQB® Foundation Level</strong></li>
@@ -180,7 +181,7 @@ const description = "QA de rendimiento y proyectos digitales — Pedro Izquierdo
       </div>
 
       <!-- IDIOMAS -->
-      <div class="cv-block">
+      <div class="cv-block" data-reveal data-reveal-variant="right" data-reveal-delay="3">
         <h2>Idiomas</h2>
         <ul class="cv-list">
           <li><strong>Inglés:</strong> nivel B2</li>
@@ -188,7 +189,7 @@ const description = "QA de rendimiento y proyectos digitales — Pedro Izquierdo
       </div>
 
       <!-- INTERESES -->
-      <div class="cv-block">
+      <div class="cv-block" data-reveal data-reveal-variant="right" data-reveal-delay="4">
         <h2>Intereses</h2>
         <p>
           Tecnología, inteligencia artificial, proyectos personales, mejora financiera,
